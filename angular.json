@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/themes/styles.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/themes/scripts.min.js"
+            ]
           },
           "configurations": {
             "production": {
