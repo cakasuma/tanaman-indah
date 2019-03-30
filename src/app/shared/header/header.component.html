@@ -17,22 +17,22 @@
           <!-- Desctop Nav -->
           <ul class="nav-list d-none d-md-flex">
             <li class="d-none d-lg-block">
-              <a href="#"><span class="underline-hover">Beranda</span></a>
+              <a [routerLink]="'pages/home'"><span class="underline-hover">Beranda</span></a>
             </li>
             <li>
-              <a href="#"><span class="underline-hover">Mulai Berjualan</span></a>
+              <a href="#"><span class="underline-hover">Tanaman</span></a>
             </li>
             <li>
-              <a href="#"><span class="underline-hover">Informasi</span></a>
+              <a [routerLink]="'pages/aboutus'"><span class="underline-hover">Informasi</span></a>
             </li>
           </ul>
 
           <!-- Mobile Nav -->
           <div class="d-md-none mobile-nav-block">
             <ul class="nav-list-mobile">
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#">Berjualan</a></li>
-              <li><a href="#">Informasi</a></li>
+              <li><a [routerLink]="'pages/home'">Beranda</a></li>
+              <li><a href="#">Tanaman</a></li>
+              <li><a [routerLink]="'pages/aboutus'">Informasi</a></li>
             </ul>
             <div class="phone-info-mobile"><i class="icon ion-md-call"></i>(+62) 8122394</div>
           </div>

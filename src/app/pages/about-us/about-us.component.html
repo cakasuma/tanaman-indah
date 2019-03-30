@@ -1,0 +1,83 @@
+<section class="top-info-links bg-darken">
+    <div class="container">
+      <div class="row top-info-links-list">
+        <div class="col-6 text-center">
+          <a href="#"><span class="underline-hover">Dapatkan diskon hingga 10%</span></a>
+        </div>
+        <div class="col-6 text-center">
+          <a href="#"><span class="underline-hover">Siswa diskon 20%</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- contacts page content-->
+  <section class="page-content">
+    <div class="container">
+      <h2>Hubungi kami</h2>
+  
+      <div class="row contacts-row">
+        <div class="col-md-9">
+  
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <div class="row">
+  
+              <!-- Name Input -->
+              <div class="col-md-6 form-group">
+                <input type="text" placeholder="Nama" class="form-control" />
+              </div>
+  
+              <!-- Email Input -->
+              <div class="col-md-6 form-group">
+                <input type="email" placeholder="Email" class="form-control" />
+              </div>
+            </div>
+  
+            <!-- Subject Input -->
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subjek" class="form-control" />
+            </div>
+  
+            <!-- Message Input -->
+            <div class="form-group">
+              <textarea placeholder="Pesan" rows="7" class="form-control contact-message"></textarea>
+            </div>
+  
+            <!-- Send Message Button -->
+            <button type="submit" class="btn btn-full-width btn-primary">Kirim pesan</button>
+          </form>
+        </div>
+        <div class="col-md-3">
+  
+          <!-- Phone Numbers -->
+          <div class="contact-item contact-item-phone" data-aos="fade-right">
+            <h6>Nomor telepon</h6>
+            <p>(0711) 834743 (Kantor)</p>
+            <p>+62812 378723 (Whatsapp)</p>
+          </div>
+  
+          <!-- Email Address -->
+          <div class="contact-item contact-item-mail" data-aos="fade-right" data-aos-delay="200">
+            <h6>Email kami</h6>
+            <p><a href="#"><span class="underline-hover">sukabeliat@gmail.com</span></a></p>
+          </div>
+  
+          <!-- Address -->
+          <div class="contact-item contact-item-address" data-aos="fade-right" data-aos-delay="400">
+            <h6>Kujungi kami</h6>
+            <p>Seduduk putih 1, Palembang, Indonesia
+              (<a href="https://www.google.com/maps/dir//-2.947540,104.763550/@-2.947540,104.763550,16z?hl=en-US" target="_blank"><span class="underline-hover">get directions</span></a>)
+            </p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Google Maps container -->
+  <agm-map class="map" [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
