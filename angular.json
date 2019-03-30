@@ -31,7 +31,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/ionicons/dist/ionicons.js",
               "src/assets/themes/scripts.min.js"
             ]
           },
