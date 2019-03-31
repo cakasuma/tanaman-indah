@@ -1,10 +1,8 @@
 import { HttpHeaders } from '@angular/common/http';
 
-const endpoint = 'http://localhost:3000/';
+const endpoint = 'https://young-garden-19814.herokuapp.com/';
 const httpOptions = {
   headers: new HttpHeaders({
-    'cache-control': 'no-cache',
-    'Access-Control-Allow-Origin': 'Content-Type',
     'Content-Type':  'application/json'
   })
 };

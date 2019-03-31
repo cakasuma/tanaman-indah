@@ -28,10 +28,12 @@
             ],
             "styles": [
               "src/assets/themes/themes.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "src/assets/themes/scripts.min.js"
+              "src/assets/themes/scripts.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

@@ -46,7 +46,12 @@
             </div>
   
             <!-- Send Message Button -->
-            <button (click)="addFeedback()" class="btn btn-full-width btn-primary">Kirim pesan</button>
+            <button (click)="addFeedback()" class="btn btn-full-width btn-primary">
+                <div [hidden]="!loading" class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <span [hidden]="loading">Kirim pesan</span>
+            </button>
           </div>
         </div>
         <div class="col-md-3">
