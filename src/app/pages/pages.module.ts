@@ -6,7 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from '../../environments/environment';
 import { ShopComponent } from './shop/shop.component';
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
       AgmCoreModule.forRoot({
         apiKey: environment.google_api_key
       }),
-      HttpClientModule
+      FormsModule,
     ],
   })
   export class PagesModule { }

@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
-import { endpoint, httpOptions } from '../config';
-
+import { httpOptions, endpoint } from '../config';
 @Injectable({
   providedIn: 'root'
 })
@@ -28,7 +27,7 @@ export class FeedbackService {
 
   addFeedback(feedback): Observable<any> {
     return this.http.post<any>(endpoint + 'feedback', JSON.stringify(feedback), httpOptions).pipe(
-      tap((feedback) => console.log(`added /w ${feedback}`)),
+      tap((feedback) => console.log(`added /w ${feedback['_id']}`)),
       catchError(this.handleError<any>('addFeedback'))
     );
   }

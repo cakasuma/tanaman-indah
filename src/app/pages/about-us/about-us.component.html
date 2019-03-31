@@ -21,33 +21,33 @@
         <div class="col-md-9">
   
           <!-- Contact Form -->
-          <form class="contact-form">
+          <div class="contact-form">
             <div class="row">
   
               <!-- Name Input -->
               <div class="col-md-6 form-group">
-                <input type="text" placeholder="Nama" class="form-control" />
+                <input [(ngModel)]="feedbackData.name" type="text" placeholder="Nama" class="form-control" />
               </div>
   
               <!-- Email Input -->
               <div class="col-md-6 form-group">
-                <input type="email" placeholder="Email" class="form-control" />
+                <input [(ngModel)]="feedbackData.email" type="email" placeholder="Email" class="form-control" />
               </div>
             </div>
   
             <!-- Subject Input -->
             <div class="form-group">
-              <input type="text" name="subject" placeholder="Subjek" class="form-control" />
+              <input [(ngModel)]="feedbackData.subject" type="text" name="subject" placeholder="Subjek" class="form-control" />
             </div>
   
             <!-- Message Input -->
             <div class="form-group">
-              <textarea placeholder="Pesan" rows="7" class="form-control contact-message"></textarea>
+              <textarea [(ngModel)]="feedbackData.message" placeholder="Pesan" rows="7" class="form-control contact-message"></textarea>
             </div>
   
             <!-- Send Message Button -->
-            <button type="submit" class="btn btn-full-width btn-primary">Kirim pesan</button>
-          </form>
+            <button (click)="addFeedback()" class="btn btn-full-width btn-primary">Kirim pesan</button>
+          </div>
         </div>
         <div class="col-md-3">
   
