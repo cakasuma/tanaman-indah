@@ -15,15 +15,15 @@ export class FeedbackService {
     return body || {};
   }
 
-  getFeedbacks(): Observable<any> {
-    return this.http.get(endpoint + 'feedback').pipe(
-      map(this.extractData));
-  }
+  // getFeedbacks(): Observable<any> {
+  //   return this.http.get(endpoint + 'feedback').pipe(
+  //     map(this.extractData));
+  // }
 
-  getFeedback(id): Observable<any> {
-    return this.http.get(endpoint + 'feedback/' + id).pipe(
-      map(this.extractData));
-  }
+  // getFeedback(id): Observable<any> {
+  //   return this.http.get(endpoint + 'feedback/' + id).pipe(
+  //     map(this.extractData));
+  // }
 
   addFeedback(feedback): Observable<any> {
     return this.http.post<any>(endpoint + 'feedback', JSON.stringify(feedback), httpOptions).pipe(
@@ -32,12 +32,12 @@ export class FeedbackService {
     );
   }
 
-  deleteFeedback(id): Observable<any> {
-    return this.http.delete<any>(endpoint + 'feedback/' + id, httpOptions).pipe(
-      tap(_ => console.log(`deleted feedback id=${id}`)),
-      catchError(this.handleError<any>('deleteProduct'))
-    );
-  }
+  // deleteFeedback(id): Observable<any> {
+  //   return this.http.delete<any>(endpoint + 'feedback/' + id, httpOptions).pipe(
+  //     tap(_ => console.log(`deleted feedback id=${id}`)),
+  //     catchError(this.handleError<any>('deleteProduct'))
+  //   );
+  // }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
