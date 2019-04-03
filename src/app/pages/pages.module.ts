@@ -7,14 +7,18 @@ import { AgmCoreModule } from '@agm/core';
 import { environment } from '../../environments/environment';
 import { ShopComponent } from './shop/shop.component';
 import { FormsModule } from '@angular/forms';
+import { ShopDetailComponent } from './shop-detail/shop-detail.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
         HomeComponent,
         AboutUsComponent,
-        ShopComponent
+        ShopComponent,
+        ShopDetailComponent
     ],
     imports: [
+      CommonModule,
       PagesRoutingModule,
       SharedModule,
       AgmCoreModule.forRoot({
