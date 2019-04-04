@@ -12,7 +12,7 @@ export class ShopComponent implements OnInit {
   plants:any = [];
   loading: boolean = false;
 
-  constructor(public rest:PlantService, private route: ActivatedRoute, private router: Router) { }
+  constructor(public plant:PlantService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.getPlants();
@@ -21,7 +21,7 @@ export class ShopComponent implements OnInit {
 
   getPlants() {
     this.plants = [];
-    this.rest.getPlants().subscribe((data: {}) => {
+    this.plant.getPlants().subscribe((data: {}) => {
       this.loading = false;
       this.plants = data;
     });
