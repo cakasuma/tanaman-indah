@@ -34,7 +34,7 @@
               <div class="product-badge badge-best-seller">{{i+1}}</div>
               <a [routerLink]="['/pages/detail', p._id]" class="product-details">
                 <span class="product-img">
-                  <img class="d-block img-fluid" src="{{p.imagePath}}" alt="{{p.name}}">
+                  <img class="d-block img-fluid" [src]="p.imagePath" alt="{{p.name}}">
                 </span>
                 <span class="product-name">{{p.name}}</span>
               </a>
