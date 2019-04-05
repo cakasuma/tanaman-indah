@@ -23,8 +23,8 @@ export class ShopDetailComponent implements OnInit {
 
   getPlant(id) {
     this.plant.getPlant(id).subscribe((data: {}) => {
-      this.loading = false;
       this.product = data;
+      this.loading = false;
     });
   }
 

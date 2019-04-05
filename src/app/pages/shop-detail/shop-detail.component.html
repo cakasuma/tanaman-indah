@@ -11,16 +11,16 @@
       <div class="col-md-4 product-gallery">
         <!-- Full Size Images For Preview -->
         <div class="slider slider-for slick-slider">
-          <div><img class="d-block w-100" src="{{product.imagePath}}" alt=""></div>
+          <div><img class="d-block w-100" src="{{product?.imagePath}}" alt=""></div>
         </div>
 
       </div>
       <div class="col-md-8">
         <div class="product-info">
-          <h2>{{product.name}}</h2>
-          <div class="product-price">${{product.price}}</div>
+          <h2>{{product?.name}}</h2>
+          <div class="product-price">${{product?.price}}</div>
 
-          <p>{{product.description}}</p>
+          <p>{{product?.description}}</p>
 
           <div class="product-actions">
             <input type="number" value="1" min="1" class="form-control">
